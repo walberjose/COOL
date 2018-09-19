@@ -1,0 +1,19 @@
+
+            _______ lxc: bgp65000_________
+Controller /                              \
+     __|__/_                               \
+    |  s1   |                               lxc: gobgp
+    |_______|                              /
+    /  |  \                               /
+   /   |   \_______ lxc: bgp65001________/
+  h1   h2
+
+#Followed the tutorial:
+http://containerops.org/2013/11/19/lxc-networking/
+
+#The configuration of LXC are in:
+sudo nano ~/.local/share/lxc/
+
+#For example:
+sudo nano ~/.local/share/lxc/bgp65000/config
+
